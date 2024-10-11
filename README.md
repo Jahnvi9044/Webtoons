@@ -10,6 +10,7 @@ This project is a simple RESTful API for managing a collection of Webtoons. It p
 - Add a new webtoon
 - Delete a specific webtoon
 - JWT-based authentication for secure endpoints
+ (ID is the QbjectId('') content assigned by mongodb th each entry ) 
 
 ## Technologies Used
 
@@ -61,6 +62,7 @@ The server will run on http://localhost:3000
 
 * GET /webtoons: Fetch all webtoons
 * GET /webtoons/:id: Fetch a specific webtoon by its ID
+ (ID is the QbjectId('') content assigned by mongodb th each entry ) 
 
 ### Protected Endpoints (require JWT authentication)
 
@@ -68,7 +70,7 @@ The server will run on http://localhost:3000
 * POST /signin: Sign in a user and return a JWT token
 * POST /webtoons: Add a new webtoon (Requires JWT)
 * DELETE /webtoons/:id: Delete a webtoon (Requires JWT)
-
+(ID is the QbjectId('') content assigned by mongodb th each entry ) 
 ## Example Usage
 
 #### Signup:
