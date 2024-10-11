@@ -71,7 +71,7 @@ The server will run on http://localhost:3000
 
 ## Example Usage
 
-Signup:
+#### Signup:
 
     
       POST /signup
@@ -83,7 +83,7 @@ Signup:
 
 
 
-Signin (get JWT token):
+#### Signin (get JWT token):
 
      POST /signin
      {
@@ -92,12 +92,12 @@ Signin (get JWT token):
      }
 
 
-Response 
+#### Response 
    
      {
       "token": "your-jwt-token"
      }
-Adding a Webtoon (Authenticated Request):
+#### Adding a Webtoon (Authenticated Request):
     
     POST /webtoons
     {
@@ -106,7 +106,7 @@ Adding a Webtoon (Authenticated Request):
      "characters": "Character 1"
      }
 
-Include JWT token in the Authorization header:
+#### Include JWT token in the Authorization header:
     
       Authorization: Bearer your-jwt-token
 
