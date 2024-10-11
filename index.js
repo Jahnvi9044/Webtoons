@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken");
 
 const {content_check,zod_1,zod_2,middleware} = require('./middleware');
 
-const {jwt_secret = require('./helper');
+const {jwt_secret} = require('./helper');
 
 //for rate-limiting :
 const rate_limiting = require('express-rate-limit');
