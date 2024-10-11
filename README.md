@@ -39,7 +39,7 @@ Before running this project, make sure you have:
 
 2. Navigate to the project directory:  
    ```bash
-   cd webtoon-backend
+   cd Webtoons
 
 3. Install the dependencies::  
    ```bash
