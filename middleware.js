@@ -1,6 +1,6 @@
 
 const jwt = require('jsonwebtoken');
-const jwt_secret = require('./helper');
+const {jwt_secret} = require('./helper');
 const zod = require('zod');
 
 function content_check(req,res,next){
@@ -76,12 +76,16 @@ try{
    const token  = token_arr[1];
  
    const decode = jwt.decode(token);
+    // console.log("token:"+token);
+    // console.log("decoded token:"+decode);
 
    if(decode)
-   {
+   { 
+    // console.log("Reached");
     const verify = jwt.verify(token,jwt_secret);
+    // console.log("Reachedaa");
     if(verify)
-    {
+    {   console.log(verify);
         next();
     }
     else 
